@@ -4,7 +4,7 @@ This project is a part of my Python Developer Internship at Asterisc Technocrat.
 
 ## Features
 
-- User registration and login functionality.
+- User login functionality.
 - Ability to add, update, and delete tasks.
 - Option to set reminders for specific tasks.
 - User-friendly graphical user interface using Tkinter.
