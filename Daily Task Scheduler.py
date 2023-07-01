@@ -52,7 +52,7 @@ class DailyTaskScheduler:
         password = self.password_entry.get()
 
         # Code for user login
-        # Validate the username and password from the file or database
+      
         if username == "admin" and password == "password":
             self.logged_in = True
             self.current_user = username
@@ -106,18 +106,18 @@ class DailyTaskScheduler:
             current_time = datetime.now().strftime("%H:%M")
             reminder_datetime = datetime.strptime(reminder_time, "%H:%M").strftime("%H:%M")
 
-            # Code to schedule the reminder using the specified reminder_datetime
+            # Code to schedule the reminder 
 
             messagebox.showinfo("Reminder Set", f"Reminder set for '{task}' at {reminder_time}.")
             reminder_window.destroy()
         except ValueError:
             messagebox.showerror("Invalid Time", "Please enter a valid time (HH:MM).")
 
-# Create the root window
+
 root = tk.Tk()
 
-# Create an instance of the Daily Task Scheduler application
+
 task_scheduler = DailyTaskScheduler(root)
 
-# Start the Tkinter event loop
+
 root.mainloop()
